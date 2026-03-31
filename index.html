@@ -17,7 +17,14 @@
 
     /* About Me */
     .about { display:flex; flex-wrap:wrap; justify-content:center; gap:30px; }
-    .about img { width:250px; border-radius:15px; }
+    .about img {
+  width:300px;          /* ancho fijo, puedes ajustar */
+  height:auto;          /* mantiene proporciones */
+  border-radius:15px;
+  object-fit:cover;     /* evita deformaciones */
+  position:sticky;      /* hace que siga el scroll */
+  top:20px;             /* separación desde arriba mientras se desplaza */
+}
     .about-text { max-width:600px; }
 
     /* Proyectos */
