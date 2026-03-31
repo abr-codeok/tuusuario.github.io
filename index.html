@@ -1,17 +1,96 @@
-<h2>Mis Proyectos</h2>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px;">
+  <!-- Tipografía y estilo simple -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Roboto', sans-serif; margin:0; padding:0; background:#f5f5f5; color:#333; }
+    header { background:#2c3e50; color:#fff; text-align:center; padding:50px 20px; }
+    header h1 { margin:0; font-size:2.5em; }
+    header p { font-size:1.2em; margin-top:10px; }
+    section { padding:50px 20px; max-width:1000px; margin:0 auto; }
+    h2 { text-align:center; margin-bottom:40px; font-size:2em; color:#2c3e50; }
 
-  <div>
-    <img src="proyecto1.jpg" style="width:100%; border-radius:10px;">
-    <h3>Proyecto 1</h3>
-    <p>Descripción breve</p>
-  </div>
+    /* About Me */
+    .about { display:flex; flex-wrap:wrap; justify-content:center; gap:30px; }
+    .about img { width:250px; border-radius:15px; }
+    .about-text { max-width:600px; }
 
-  <div>
-    <img src="proyecto2.jpg" style="width:100%; border-radius:10px;">
-    <h3>Proyecto 2</h3>
-    <p>Descripción breve</p>
-  </div>
+    /* Proyectos */
+    .projects { display:grid; grid-template-columns:repeat(auto-fit, minmax(250px,1fr)); gap:20px; }
+    .card { background:#fff; border-radius:10px; overflow:hidden; box-shadow:0 4px 8px rgba(0,0,0,0.1); transition:transform 0.2s; }
+    .card:hover { transform:scale(1.05); }
+    .card img { width:100%; display:block; }
+    .card h3 { margin:15px; font-size:1.3em; color:#2c3e50; }
+    .card p { margin:0 15px 15px 15px; color:#555; font-size:1em; }
 
-</div>
+    /* Footer */
+    footer { text-align:center; padding:20px; background:#2c3e50; color:#fff; }
+    a { color:#3498db; text-decoration:none; }
+    a:hover { text-decoration:underline; }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER / ABOUT ME -->
+  <header>
+    <h1>Tu Nombre</h1>
+    <p>Diseñador / Creativo / Tu Profesión</p>
+  </header>
+
+  <section class="about">
+    <img src="tu-foto.jpg" alt="Mi foto">
+    <div class="about-text">
+      <h2>Sobre mí</h2>
+      <p>
+        Hola, soy Tu Nombre. Me dedico a crear proyectos creativos que combinan diseño, arte y funcionalidad. Me apasiona transformar ideas en experiencias visuales atractivas y efectivas.
+      </p>
+      <p>
+        Puedes ver mis trabajos más abajo o contactarme a través de <a href="mailto:tuemail@ejemplo.com">correo electrónico</a>.
+      </p>
+    </div>
+  </section>
+
+  <!-- PROYECTOS / PORTFOLIO -->
+  <section>
+    <h2>Mis Proyectos</h2>
+    <div class="projects">
+      
+      <div class="card">
+        <img src="proyecto1.jpg" alt="Proyecto 1">
+        <h3>Proyecto 1</h3>
+        <p>Descripción breve de tu proyecto 1.</p>
+      </div>
+
+      <div class="card">
+        <img src="proyecto2.jpg" alt="Proyecto 2">
+        <h3>Proyecto 2</h3>
+        <p>Descripción breve de tu proyecto 2.</p>
+      </div>
+
+      <div class="card">
+        <img src="proyecto3.jpg" alt="Proyecto 3">
+        <h3>Proyecto 3</h3>
+        <p>Descripción breve de tu proyecto 3.</p>
+      </div>
+
+      <div class="card">
+        <img src="proyecto4.jpg" alt="Proyecto 4">
+        <h3>Proyecto 4</h3>
+        <p>Descripción breve de tu proyecto 4.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    &copy; 2026 Tu Nombre | Hecho con ❤️ usando GitHub Pages
+  </footer>
+
+</body>
+</html>
